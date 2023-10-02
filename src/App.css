@@ -1,38 +1,111 @@
-.App {
+* {
+  margin: 0 auto;
+  max-width: 800px;
+  background-color: #111;
+}
+
+h1, h2, h3{
+  color: #ffffff;
+  text-transform: uppercase;
+}
+
+p{
+  color: white;
+  text-transform: capitalize;
+}
+
+a{
+  text-decoration: none;
+}
+
+header{
   text-align: center;
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+header h1{
+  color: #00c8c8;
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
+.display {
+  display: grid;
+  grid-template-columns: repeat(5, 1fr);
+  grid-gap: 1rem;
+  padding: 1rem;
 }
 
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
+img{
   display: flex;
-  flex-direction: column;
-  align-items: center;
   justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
+  align-items: center;
 }
 
-.App-link {
-  color: #61dafb;
+.detail{
+  padding: 1rem;
+  
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
+.detail-bio{
+  width: 22%;
+  height: 25vh;
+  display: inline-block;
+  box-sizing: border-box;
+  border: 1px solid #00c8c8;
+  vertical-align: top;
+  padding: 0.5rem;
+  margin-right: 1rem;
+  text-align: center;
+}
+
+.detail-lore{
+  width: 75%;
+  height: 25vh;
+  display: inline-block;
+  box-sizing: border-box;
+  border: 1px solid #00c8c8;
+  padding: 1rem;
+  vertical-align: top;
+}
+
+.detail-lore p{
+  text-transform: uppercase;
+}
+
+.detail-spells{
+  display: grid;
+  grid-template-columns: repeat(5, 1fr);
+  border: 1px solid #00c8c8;
+  padding: 1rem;
+  margin-top: 1rem;
+  margin-right: 0.5rem;
+}
+
+.detail-spells-inner{
+  padding: 0.5rem;
+  text-align: center;
+}
+
+@media (max-width: 768px) {
+  .detail {
+    flex-direction: column;
+    align-items: center;
+    border: 1px solid #00c8c8;
+    margin: 1rem;
   }
-  to {
-    transform: rotate(360deg);
+
+  
+  .detail-bio, .detail-lore {
+    width: 100%;
+    height: auto;
+    margin: 0.5rem;
+    border: none;
   }
+
+  .detail-spells{
+    height: auto;
+    margin: 0.5rem;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    border: none;
+  }
+
 }
