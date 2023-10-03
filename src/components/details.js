@@ -1,5 +1,6 @@
 import '../App.css';
 import Header from './header';
+import Footer from './footer';
 import React, { useEffect, useState } from 'react';
 import { useParams } from 'react-router-dom';
 
@@ -61,6 +62,7 @@ function Details() {
           ))
         )}
     </div>
+    <Footer/>
     </>
   );
 }

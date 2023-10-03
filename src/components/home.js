@@ -1,6 +1,7 @@
 import '../App.css';
 import Card from './card';
 import Header from './header';
+import Footer from './footer';
 import React, { useState, useEffect } from 'react';
 
 function Home() {
@@ -29,6 +30,7 @@ function Home() {
           ))
         )}
       </div>
+      <Footer/>
     </div>
   );
 }
