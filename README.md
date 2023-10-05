@@ -1,31 +1,25 @@
-# Create React App
+# LoL-Dex
+An index of League of Legends Champions using the Riot Games API
 
-This directory is a brief example of a [Create React App](https://github.com/facebook/create-react-app) site that can be deployed to Vercel with zero configuration.
+## Built With
+* React
+* [Riot Games API](https://developer.riotgames.com/docs/lol)
+* [Hosted with Vercel](https://vercel.com/)
 
-## Deploy Your Own
+## Demo
+Access live website here: [https://lo-l-dex.vercel.app/](https://lo-l-dex.vercel.app/)
 
-Deploy your own Create React App project with Vercel.
+## Installation Instructions
+1. Clone the Repo
+2. The only prerequisite is to install React
+3. Install other necessary dependencies (I use NPM so dependency info is located in "package.json")
+4. For our specific API calls we DO NOT need an API key, but you can sign up for one with [Riot Games](https://developer.riotgames.com/policies/general)
+5. Start your project with "npm start" and begin coding
+
+Disclaimer: This project is deployed with [Create React App](https://github.com/facebook/create-react-app) and [Vercel](https://vercel.com/). Deploy your own by clicking the button below or visiting Vercel.
 
 [![Deploy with Vercel](https://vercel.com/button)](https://vercel.com/new/clone?repository-url=https://github.com/vercel/vercel/tree/main/examples/create-react-app&template=create-react-app)
 
-_Live Example: https://create-react-template.vercel.app/_
-
-## Available Scripts
-
-In the project directory, you can run:
-
-### `npm start`
-
-Runs the app in the development mode. Open [http://localhost:3000](http://localhost:3000) to view it in your browser.
-
-The page will reload when you make changes. You may also see any lint errors in the console.
-
-### `npm test`
-
-Launches the test runner in the interactive watch mode. See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
-
-### `npm run build`
-
-Builds the app for production to the `build` folder.
-
-It correctly bundles React in production mode and optimizes the build for the best performance. The build is minified and the filenames include the hashes.
+## Future Development Plans
+* Add voting system
+* User profile to save favorite champions
